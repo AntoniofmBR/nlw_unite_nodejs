@@ -1,0 +1,29 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 515,
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+POST http://localhost:3333/events/6580d35a-9536-4b5d-9bff-8dc17864c3c0/attendees
+Content-Type: application/json
+
+{
+  "name": "paulin pinho",
+  "email": "paulin@email.com"
+}
+
+###
+GET http://localhost:3333/events/6580d35a-9536-4b5d-9bff-8dc17864c3c0
+
+###
+GET http://localhost:3333/attendees/1/badge
+
+###
+GET http://localhost:3333/attendees/3/check-in
+
+###
+GET http://localhost:3333/events/6580d35a-9536-4b5d-9bff-8dc17864c3c0/attendees
